@@ -24,6 +24,7 @@ document.getElementById("authform").addEventListener("submit", getname);
     const name = document.getElementById("namebox");
     const chatTxt = document.getElementById("chat-txt");
     const batch = document.getElementById("batch");
+    const house = document.getElementById("house");
     const contact = document.getElementById("contact");
     const work = document.getElementById("work");
     const home = document.getElementById("home");
@@ -31,6 +32,7 @@ document.getElementById("authform").addEventListener("submit", getname);
     const username = name.value;
     const usercn = chatTxt.value;
     const userbatch = batch.value;
+    const userhouse = house.value;
     const usercontact = contact.value;
     const userwork = work.value;
     const userhome = home.value;
@@ -41,6 +43,7 @@ document.getElementById("authform").addEventListener("submit", getname);
         name: username,
         cn: usercn,
         batch: userbatch,
+        house: userhouse,
         contact: usercontact,
         work: userwork,
         home: userhome,
