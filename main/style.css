@@ -1,4 +1,83 @@
 a{
     text-decoration: none;
-    color: #00ff00;
+    color: #000000;
+    padding: 10px;
+    
+}
+
+
+
+.cnTariq{
+    border: 1px #cfcfcf;
+    height: 50px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    margin: 0px;
+    border-bottom-style: solid;
+    padding: 10px;
+    
+}
+.cnTariq:hover{
+    color: #fd0000;
+    background: #ffcece;
+    box-shadow: 0 0 1px #ff0a0a, 0 0 1px #fc014c, 0 0 1px #f22121;
+    transition-delay: .2s;
+}
+.cnQasim{
+    border: 1px #cfcfcf;
+    height: 50px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    margin: 0px;
+    border-bottom-style: solid;
+    padding: 10px;
+    
+}
+.cnQasim:hover{
+    color: #002efd;
+    background: #c8dcff;
+    box-shadow: 0 0 1px #0a37ff, 0 0 1px #0144fc, 0 0 1px #2124f2;
+    transition-delay: .2s;
+}
+.cnKhalid{
+    border: 1px #cfcfcf;
+    height: 50px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    margin: 0px;
+    border-bottom-style: solid;
+    padding: 10px;
+    
+}
+.cnKhalid:hover{
+    color: #33fd00;
+    background: #cbffd2;
+    box-shadow: 0 0 1px #0aff2b, 0 0 1px #01fc0e, 0 0 1px #21f23d;
+    transition-delay: .2s;
+}
+img{
+    margin: 5px;
+    border-radius: 50%;
+}
+.list{
+    position: absolute;
+    top: 0px;
+    right: 0;
+    width: 250px;
+    background-color: rgb(226, 226, 226);
+    
+}
+.title{
+    position: fixed;
+    font-size: 20px;
+    height: 25px;
+    background-color: white;
+    width: 100%;
+    padding: 5px;
+    z-index: 1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
 }

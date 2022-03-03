@@ -9,10 +9,18 @@ const firebaseConfig = {
   };
   firebase.initializeApp(firebaseConfig);
   const db = firebase.database();
+  var storage = firebase.storage();
+  var storageRef = storage.ref();
   
  const fetchChat = db.ref("info/");
  fetchChat.on("child_added", function (snapshot) {
    const messages = snapshot.val();
-     const msg = "<div class=\"cadetno\"> <a href=\"./Next/details.html?"+messages.cn+"\"> "+ messages.cn +" <a/></div>";
+     const msg = "<div class=\"cn"+messages.house+"\"> <img id=\""+messages.cn+"\" height=\"50\" width=\"50\"/> <a href=\"./Next/details.html?"+messages.cn+"\"> "+ messages.name +"<br>"+messages.cn+" <a/></div>";
      document.getElementById("list").innerHTML += msg;
+
+     storageRef.child(messages.cn+ ".jpg").getDownloadURL().then(function(url) {
+      var img = document.getElementById(messages.cn);
+      img.src = url;
+      }).catch(function(error) {
+      });
  });
