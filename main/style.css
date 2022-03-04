@@ -100,12 +100,30 @@ img{
 
 }
 .mainCon{
+    display: grid;
+    position: relative;
     padding: 10px;
     background-color:#fff ;
     height: 100%;
     margin-left: 50px;
     margin-right: 300px;
     margin-top: 100px;
-    border-left: 180px solid #ffbb01;
     box-shadow: 0 4px 8px 5px rgba(0, 0, 0, 0.2);
+    flex-wrap: wrap;
+
+    
+}
+
+.profile{
+    border-radius: 0;
+    position: relative;
+    width: 200px;
+    float: left;
+    
+}
+.info{
+    width: 200px;
+    position: relative;
+    float: right;
+    padding-right: 150px;
 }
