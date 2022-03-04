@@ -1,7 +1,13 @@
-a{
+font{
     text-decoration: none;
     color: #000000;
     padding: 10px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
     
 }
 
@@ -10,7 +16,7 @@ a{
 .cnTariq{
     border: 1px #cfcfcf;
     height: 50px;
-    width: 100%;
+    width: 90%;
     position: relative;
     display: flex;
     margin: 0px;
@@ -22,12 +28,11 @@ a{
     color: #fd0000;
     background: #ffcece;
     box-shadow: 0 0 1px #ff0a0a, 0 0 1px #fc014c, 0 0 1px #f22121;
-    transition-delay: .2s;
 }
 .cnQasim{
     border: 1px #cfcfcf;
     height: 50px;
-    width: 100%;
+    width: 90%;
     position: relative;
     display: flex;
     margin: 0px;
@@ -39,12 +44,11 @@ a{
     color: #002efd;
     background: #c8dcff;
     box-shadow: 0 0 1px #0a37ff, 0 0 1px #0144fc, 0 0 1px #2124f2;
-    transition-delay: .2s;
 }
 .cnKhalid{
     border: 1px #cfcfcf;
     height: 50px;
-    width: 100%;
+    width: 90%;
     position: relative;
     display: flex;
     margin: 0px;
@@ -56,11 +60,11 @@ a{
     color: #33fd00;
     background: #cbffd2;
     box-shadow: 0 0 1px #0aff2b, 0 0 1px #01fc0e, 0 0 1px #21f23d;
-    transition-delay: .2s;
 }
 img{
     margin: 5px;
     border-radius: 50%;
+    border: 1px solid black;
 }
 .list{
     float:right;
@@ -70,6 +74,9 @@ img{
     width: 250px;
     overflow: auto;
     background-color: rgb(226, 226, 226);
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
     
 }
 .title{
@@ -82,4 +89,12 @@ img{
     z-index: 1;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 
+}
+.details{
+    margin-right: 250px;
+    
+
+}
+.mainCon{
+    padding: 10px;
 }
