@@ -1,18 +1,26 @@
+@font-face {
+    font-family: mm;
+    src: url(Mermaid1001.ttf);
+  }
 font{
     text-decoration: none;
-    color: #000000;
     padding: 10px;
+    justify-self: center;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    text-align: justify;
+    font-weight: bold;
     
 }
 
+
 body{
-    background-color: #ffbb01;
+    background-color: #f5b401;
+    overflow: hidden;
 }
 
 
@@ -29,9 +37,9 @@ body{
     
 }
 .cnTariq:hover{
-    color: #fd0000;
-    background: #ffcece;
-    box-shadow: 0 0 1px #ff0a0a, 0 0 1px #fc014c, 0 0 1px #f22121;
+    color: #ff0000;
+    background: #000000;
+    
 }
 .cnQasim{
     border: 1px #cfcfcf;
@@ -45,9 +53,9 @@ body{
     
 }
 .cnQasim:hover{
-    color: #002efd;
-    background: #c8dcff;
-    box-shadow: 0 0 1px #0a37ff, 0 0 1px #0144fc, 0 0 1px #2124f2;
+    color: #0077ff;
+    background: #000000;
+    
 }
 .cnKhalid{
     border: 1px #cfcfcf;
@@ -55,25 +63,25 @@ body{
     width: 90%;
     position: relative;
     display: flex;
-    margin: 0px;
+    margin: 0px;margin: 1px;
     border-bottom-style: solid;
     padding: 10px;
     
 }
 .cnKhalid:hover{
-    color: #33fd00;
-    background: #cbffd2;
-    box-shadow: 0 0 1px #0aff2b, 0 0 1px #01fc0e, 0 0 1px #21f23d;
+    color: #03da03;
+    background: #000000;
+    
 }
 img{
-    margin: 5px;
     border-radius: 50%;
-    border: 1px solid black;
+    border: 0px solid black;
+    margin-right: 5px;
 }
 .list{
     float:right;
     position: absolute;
-    top: 0px;
+    top: 86px;
     right: 0;
     width: 250px;
     overflow: auto;
@@ -81,6 +89,7 @@ img{
     height: 100%;
     overflow-y: scroll;
     overflow-x: hidden;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 10px rgba(0, 0, 0, 0.19);
     
 }
 .title{
@@ -101,29 +110,66 @@ img{
 }
 .mainCon{
     display: grid;
-    position: relative;
+    position: fixed;
     padding: 10px;
-    background-color:#fff ;
-    height: 100%;
+    background: linear-gradient(90deg, #f5b401 20%, #ffffff 20%);
+    height: 500px;
+    width: 1200px;
     margin-left: 50px;
     margin-right: 300px;
-    margin-top: 100px;
-    box-shadow: 0 4px 8px 5px rgba(0, 0, 0, 0.2);
+    margin-top: 155px;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 10px rgba(0, 0, 0, 0.19);
     flex-wrap: wrap;
 
     
 }
 
 .profile{
-    border-radius: 0;
-    position: relative;
-    width: 200px;
-    float: left;
-    
+    border-radius: 0; 
+    margin-top: 80px;
+    margin-left: 75px;
 }
 .info{
-    width: 200px;
+    width: 600px;
     position: relative;
     float: right;
-    padding-right: 150px;
+    padding-right: 190px;
+    background-color: rgb(255, 255, 255);
+}
+
+.topBar{
+    position:fixed;
+    width: 120%;
+    margin-top: -12px;
+    margin-left: -12px;
+    margin-right: -100px;
+    height: 90px;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    z-index: 2;
+}
+.profileCon{
+    
+    position: relative;
+    float: left;
+
+}
+
+.work{
+    margin-top: 80px;
+    width: 70px;
+    padding: 5px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #a19b9b;
+    color: rgb(255, 255, 255);
+}
+
+.name{
+    color: black;
+    font-weight: bolder;
+    font-size: 50px;
+    margin-top: -8px;
+    font-family: mm;
 }

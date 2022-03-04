@@ -15,7 +15,7 @@ const firebaseConfig = {
  const fetchChat = db.ref("info/");
  fetchChat.on("child_added", function (snapshot) {
    const messages = snapshot.val();
-     const msg = "<div class=\"cn"+messages.house+"\"> <img id=\""+messages.cn+"\" height=\"50\" width=\"50\"/> <font onclick=\"load("+messages.cn+")\"> "+ messages.name +"<br>"+messages.cn+" <font/></div>";
+     const msg = "<div onclick=\"load("+messages.cn+")\" class=\"cn"+messages.house+"\"> <img id=\""+messages.cn+"\" height=\"50\" width=\"50\"/> <font> "+ messages.name +"'"+messages.cn+" <font/></div>";
      document.getElementById("list").innerHTML += msg;
 
      storageRef.child(messages.cn+ ".jpg").getDownloadURL().then(function(url) {
@@ -30,13 +30,13 @@ const firebaseConfig = {
   fetchChat.once("value").then( function (snapshot) {
     const name = snapshot.child("name").val();
     
-    document.getElementById("name").innerHTML = "Name: "+ name;
+    document.getElementById("name").innerHTML = "Cadet "+ name;
     document.getElementById("cadetno").innerHTML = "Cadet no:"+ cn;
     document.getElementById("house").innerHTML = "House: "+ snapshot.child("house").val();
     document.getElementById("batch").innerHTML = "Batch: "+ snapshot.child("batch").val();
     document.getElementById("mobile").innerHTML = "Mobile: "+ snapshot.child("contact").val();
     document.getElementById("email").innerHTML = "Email: "+ snapshot.child("email").val();
-    document.getElementById("work").innerHTML = "Work: "+ snapshot.child("work").val();
+    document.getElementById("work").innerHTML = snapshot.child("work").val();
     document.getElementById("address").innerHTML = "Address: "+ snapshot.child("home").val()+", "+ snapshot.child("district").val();
     document.getElementById("misc").innerHTML = "Misc: "+ snapshot.child("misc").val();
     
