@@ -197,7 +197,7 @@ img{
     border-top: 1px solid #868686;
 }
 .info2{
-    width: 500px;
+    width: 40%;
     position: relative;
     float: right;
     padding-right: 0;
@@ -205,11 +205,15 @@ img{
 }
 .info{
     margin-top: 200px;
-    width: 250px;
+    width: 15%;
     position: relative;
     border-left: 1px solid #000000;
     float: right;
     padding-left: 20px;
     height: 180px;
     background-color: rgb(255, 255, 255);
+}
+a.menuitem{
+    color: #ffffff;
+    text-decoration: none;
 }
