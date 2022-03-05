@@ -39,6 +39,19 @@ const firebaseConfig = {
     document.getElementById("work").innerHTML = snapshot.child("work").val();
     document.getElementById("address").innerHTML = "Address: "+ snapshot.child("home").val()+", "+ snapshot.child("district").val();
     document.getElementById("misc").innerHTML = "Misc: "+ snapshot.child("misc").val();
+    const ele= document.getElementById("infoHC");
+
+    switch (snapshot.child("house").val()){
+      case "Qasim":
+        ele.class = "infoHCQ";
+        
+        break;
+      case "Khalid":
+        ele.class = "infoHCK";
+        break;
+
+
+    }
     
 
     storageRef.child(cn+ ".jpg").getDownloadURL().then(function(url) {

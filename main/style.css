@@ -197,7 +197,7 @@ img{
     border-top: 1px solid #868686;
 }
 .info2{
-    width: 40%;
+    width: 30%;
     position: relative;
     float: left;
     padding-right: 0;
@@ -206,7 +206,7 @@ img{
 }
 .info{
     margin-top: 200px;
-    width: 15%;
+    width: 30%;
     position: relative;
     border-left: 1px solid #000000;
     float: right;
@@ -218,4 +218,49 @@ a.menuitem{
     color: #ffffff;
     text-decoration: none;
     margin-left: 20px;
+}
+.infoHC{
+    float: right;
+    width: 105px;
+    height: 0;
+    border-bottom: 20px solid #ff0505;
+    border-top: 20px solid #fc002a;
+    border-left: 15px solid transparent;
+    float: right;
+    margin-bottom: 20px;
+    font-size: 17px;
+    font-weight:700;
+    position: absolute;
+    right: 0px;
+    top: 20px;
+}
+.infoHCQ{
+    float: right;
+    width: 105px;
+    height: 0;
+    border-bottom: 20px solid #0533ff;
+    border-top: 20px solid #0004fc;
+    border-left: 15px solid transparent;
+    float: right;
+    margin-bottom: 20px;
+    font-size: 17px;
+    font-weight:700;
+    position: absolute;
+    right: 0px;
+    top: 20px;
+}
+.infoHCK{
+    float: right;
+    width: 105px;
+    height: 0;
+    border-bottom: 20px solid #05ff2f;
+    border-top: 20px solid #00fc22;
+    border-left: 15px solid transparent;
+    float: right;
+    margin-bottom: 20px;
+    font-size: 17px;
+    font-weight:700;
+    position: absolute;
+    right: 0px;
+    top: 20px;
 }
