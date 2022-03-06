@@ -48,15 +48,21 @@ const firebaseConfig = {
       case "Qasim":
         ele.style.display = "none";
         eleK.style.display = "none";
+        eleQ.style.display = "inline";
         
       
         
         break;
       case "Khalid":
-        ele.class = "infoHCK";
+        ele.style.display = "none";
+        eleQ.style.display = "none";
+        eleK.style.display = "inline";
         break;
 
       default:
+        ele.style.display = "inline";
+        eleK.style.display = "none";
+        eleQ.style.display = "none";
 
 
 
@@ -68,7 +74,7 @@ const firebaseConfig = {
       imgMain.src = url;
       }).catch(function(error) {
         var imgMain = document.getElementById("profile");
-        imgMain.src = "";
+        imgMain.src = "./src/profile.png";
       });
 
   });
