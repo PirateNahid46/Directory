@@ -176,7 +176,7 @@ img{
     color: black;
     font-weight: bolder;
     font-size: 50px;
-    margin-top: -8px;
+    margin-top: -2px;
     font-family: mm;
 }
 
@@ -216,7 +216,8 @@ img{
     padding-right: 0;
     color: #6b6b6b;
     font-family: ft;
-    margin-left: 2%;
+    margin-left: 4%;
+    font-size: 20px;
     background-color: rgb(255, 255, 255);
 }
 .info{
@@ -228,7 +229,8 @@ img{
     padding-left: 20px;
     color: #5c5c5c;
     font-family: ft;
-    height: 180px;
+    font-size: 20px;
+    height: 40%;
     background-color: rgb(255, 255, 255);
 }
 a.menuitem{
