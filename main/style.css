@@ -18,6 +18,9 @@ font{
 }
 
 
+
+
+
 body{
     background-color: #d39c05;
     overflow: hidden;
@@ -147,6 +150,7 @@ img{
     
     position: relative;
     float: left;
+    width: 35%;
 
 }
 
@@ -220,47 +224,54 @@ a.menuitem{
     margin-left: 20px;
 }
 .infoHC{
-    float: right;
-    width: 105px;
-    height: 0;
-    border-bottom: 20px solid #ff0505;
-    border-top: 20px solid #fc002a;
-    border-left: 15px solid transparent;
-    float: right;
-    margin-bottom: 20px;
-    font-size: 17px;
-    font-weight:700;
+    width: 0px;
+    height: 8%;
+    background-color: transparent;
     position: absolute;
-    right: 0px;
-    top: 20px;
+    top: -5px;
+    right: 2%;
+    border: solid 15px #ff2a00;
+    border-bottom: solid 15px transparent;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    transition: all 0.2s;
+    display: none;
 }
 .infoHCQ{
-    float: right;
-    width: 105px;
-    height: 0;
-    border-bottom: 20px solid #0533ff;
-    border-top: 20px solid #0004fc;
-    border-left: 15px solid transparent;
-    float: right;
-    margin-bottom: 20px;
-    font-size: 17px;
-    font-weight:700;
+    width: 0px;
+    height: 8%;
+    background-color: transparent;
     position: absolute;
-    right: 0px;
-    top: 20px;
+    top: -5px;
+    right: 2%;
+    border: solid 15px #0011ff;
+    border-bottom: solid 15px transparent;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    transition: all 0.2s;
+    
 }
 .infoHCK{
-    float: right;
-    width: 105px;
-    height: 0;
-    border-bottom: 20px solid #05ff2f;
-    border-top: 20px solid #00fc22;
-    border-left: 15px solid transparent;
-    float: right;
-    margin-bottom: 20px;
-    font-size: 17px;
-    font-weight:700;
+    width: 0px;
+    height: 8%;
+    background-color: transparent;
     position: absolute;
-    right: 0px;
-    top: 20px;
+    top: -5px;
+    right: 2%;
+    border: solid 15px #00ff0d;
+    border-bottom: solid 15px transparent;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    transition: all 0.2s;
+}
+
+.intake{
+    width: 80%;
+    background: #000000;
+    color: #fff;
+    height: 30%;
+    margin-left: 75px;
+    margin-top: -5px;
+    z-index: -1;
+    padding-top: 10px;
 }

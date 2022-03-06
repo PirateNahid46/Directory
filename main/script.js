@@ -39,16 +39,25 @@ const firebaseConfig = {
     document.getElementById("work").innerHTML = snapshot.child("work").val();
     document.getElementById("address").innerHTML = "Address: "+ snapshot.child("home").val()+", "+ snapshot.child("district").val();
     document.getElementById("misc").innerHTML = "Misc: "+ snapshot.child("misc").val();
-    const ele= document.getElementById("infoHC");
+    const ele = document.getElementById("infoHC");
+    const eleQ = document.getElementById("infoHCQ");
+    const eleK = document.getElementById("infoHCK");
+    
 
     switch (snapshot.child("house").val()){
       case "Qasim":
-        ele.class = "infoHCQ";
+        ele.style.display = "none";
+        eleK.style.display = "none";
+        
+      
         
         break;
       case "Khalid":
         ele.class = "infoHCK";
         break;
+
+      default:
+
 
 
     }
