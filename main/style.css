@@ -135,8 +135,9 @@ img{
 
 .profile{
     border-radius: 0; 
-    margin-top: 70px;
+    margin-top: 80px;
     margin-left: 75px;
+    background: #cacaca;
 }
 
 
@@ -156,7 +157,7 @@ img{
     
     position: relative;
     float: left;
-    width: 35%;
+    width: 30%;
 
 }
 
@@ -180,7 +181,8 @@ img{
 }
 
 .logo{
-    margin: 5px;
+
+    margin: 10px;
     border-radius: 7px;
     background-color: #ffffff;
 }
@@ -205,14 +207,14 @@ img{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     z-index: 2;
     display: flex;
-    border-top: 1px solid #868686;
+    border-top: 1px solid #5c5c5c;
 }
 .info2{
     width: 30%;
     position: relative;
     float: left;
     padding-right: 0;
-    color: #868686;
+    color: #6b6b6b;
     font-family: ft;
     margin-left: 2%;
     background-color: rgb(255, 255, 255);
@@ -224,7 +226,7 @@ img{
     border-left: 1px solid #000000;
     float: right;
     padding-left: 20px;
-    color: #868686;
+    color: #5c5c5c;
     font-family: ft;
     height: 180px;
     background-color: rgb(255, 255, 255);
@@ -257,7 +259,7 @@ a.menuitem{
     position: absolute;
     top: -5px;
     right: 2%;
-    border: solid 15px #0011ff;
+    border: solid 15px #0077ff;
     border-bottom: solid 15px transparent;
     transition: all 0.2s;
     
@@ -269,7 +271,7 @@ a.menuitem{
     position: absolute;
     top: -5px;
     right: 2%;
-    border: solid 15px #00ff0d;
+    border: solid 15px #03da03;
     border-bottom: solid 15px transparent;
     transition: all 0.2s;
 }
