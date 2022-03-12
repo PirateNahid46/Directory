@@ -37,7 +37,14 @@ document.getElementById("authform").addEventListener("submit", getname);
     const useremail = email.value;
   name.value = "";
   cn.value = "";
-  
+  batch.value="";
+  house.value="";
+  contact.value="";
+  work.value="";
+  home.value="";
+  district.value="";
+  misc.value="";
+  email.value="";  
 
 
       db.ref("info/" + usercn).set({
@@ -52,6 +59,8 @@ document.getElementById("authform").addEventListener("submit", getname);
         email: useremail,
         misc : usermisc,
       });
+
+      alert("Information added");
     
     
   }
