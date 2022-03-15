@@ -46,21 +46,31 @@ document.getElementById("authform").addEventListener("submit", getname);
   misc.value="";
   email.value="";  
 
+  if (usercn != ""){
+    db.ref("info/" + usercn).set({
+      name: username,
+      cn: usercn,
+      batch: userbatch,
+      house: userhouse,
+      contact: usercontact,
+      work: userwork,
+      home: userhome,
+      district: userdistrict,
+      email: useremail,
+      misc : usermisc,
+    });
+    alert("Information added");
 
-      db.ref("info/" + usercn).set({
-        name: username,
-        cn: usercn,
-        batch: userbatch,
-        house: userhouse,
-        contact: usercontact,
-        work: userwork,
-        home: userhome,
-        district: userdistrict,
-        email: useremail,
-        misc : usermisc,
-      });
 
-      alert("Information added");
+  }
+  else{
+    alert("null");
+  }
+
+
+      
+
+      
     
     
   }
