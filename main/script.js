@@ -37,6 +37,7 @@ const firebaseConfig = {
     document.getElementById("mobile").innerHTML = "Mobile: "+ snapshot.child("contact").val();
     document.getElementById("email").innerHTML = "Email: "+ snapshot.child("email").val();
     document.getElementById("work").innerHTML = snapshot.child("work").val();
+    document.getElementById("intake").innerHTML = "Intake " + snapshot.child("intake").val();
     document.getElementById("address").innerHTML = "Address: "+ snapshot.child("home").val()+", "+ snapshot.child("district").val();
     document.getElementById("misc").innerHTML = "Misc: "+ snapshot.child("misc").val();
     const ele = document.getElementById("infoHC");

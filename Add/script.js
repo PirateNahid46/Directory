@@ -25,7 +25,9 @@ document.getElementById("authform").addEventListener("submit", getname);
     const district = document.getElementById("district");
     const misc = document.getElementById("misc");
     const email = document.getElementById("email");
+    const intake = document.getElementById("intake");
     const username = name.value;
+    const userintake = intake.value;
     const usercn = cn.value;
     const userbatch = batch.value;
     const userhouse = house.value;
@@ -45,6 +47,7 @@ document.getElementById("authform").addEventListener("submit", getname);
   district.value="";
   misc.value="";
   email.value="";  
+  intake.value="";
 
   if (usercn != ""){
     db.ref("info/" + usercn).set({
@@ -53,6 +56,7 @@ document.getElementById("authform").addEventListener("submit", getname);
       batch: userbatch,
       house: userhouse,
       contact: usercontact,
+      intake: userintake,
       work: userwork,
       home: userhome,
       district: userdistrict,
