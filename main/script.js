@@ -81,3 +81,9 @@ const firebaseConfig = {
   });
 
  }
+
+ function more(){
+   document.getElementById("misc").style.display = "inline";
+   document.getElementById("cont").style.textDecoration = "none";
+   document.getElementById("more").style.textDecoration ="underline #f5b401 3px";
+ }
