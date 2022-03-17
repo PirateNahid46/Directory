@@ -40,6 +40,7 @@ const firebaseConfig = {
     document.getElementById("intake").innerHTML = "Intake " + snapshot.child("intake").val();
     document.getElementById("address").innerHTML = "Address: "+ snapshot.child("home").val()+", "+ snapshot.child("district").val();
     document.getElementById("misc").innerHTML = "Misc: "+ snapshot.child("misc").val();
+    document.getElementById("misc").style.display = "none";
     const ele = document.getElementById("infoHC");
     const eleQ = document.getElementById("infoHCQ");
     const eleK = document.getElementById("infoHCK");
@@ -86,4 +87,17 @@ const firebaseConfig = {
    document.getElementById("misc").style.display = "inline";
    document.getElementById("cont").style.textDecoration = "none";
    document.getElementById("more").style.textDecoration ="underline #f5b401 3px";
+   document.getElementById("address").style.display = "none";
+   document.getElementById("email").style.display = "none";
+   document.getElementById("mobile").style.display = "none";
+ }
+
+ function cont(){
+  document.getElementById("misc").style.display = "none";
+  document.getElementById("cont").style.textDecoration = "underline #f5b401 3px";
+  document.getElementById("more").style.textDecoration ="none";
+  document.getElementById("address").style.display = "inline";
+  document.getElementById("email").style.display = "inline";
+  document.getElementById("mobile").style.display = "inline";
+
  }
