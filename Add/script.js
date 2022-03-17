@@ -39,15 +39,12 @@ document.getElementById("authform").addEventListener("submit", getname);
     const useremail = email.value;
   name.value = "";
   cn.value = "";
-  batch.value="";
-  house.value="";
   contact.value="";
   work.value="";
   home.value="";
   district.value="";
   misc.value="";
   email.value="";  
-  intake.value="";
 
   if (usercn != ""){
     db.ref("info/" + usercn).set({
