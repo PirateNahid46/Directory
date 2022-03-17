@@ -31,7 +31,7 @@ const firebaseConfig = {
     const name = snapshot.child("name").val();
     
     document.getElementById("name").innerHTML = "Cadet "+ name;
-    document.getElementById("cadetno").innerHTML = "Cadet no:"+ cn;
+    document.getElementById("cadetno").innerHTML = "Cadet no: "+ cn;
     document.getElementById("house").innerHTML = "House: "+ snapshot.child("house").val();
     document.getElementById("batch").innerHTML = "Batch: "+ snapshot.child("batch").val();
     document.getElementById("mobile").innerHTML = "Mobile: "+ snapshot.child("contact").val();
