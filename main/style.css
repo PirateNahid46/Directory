@@ -162,7 +162,7 @@ img{
 }
 
 .work{
-    margin-top: 80px;
+    margin-top: 58px;
     width: 70px;
     padding: 5px;
     text-align: center;
@@ -216,12 +216,12 @@ img{
     padding-right: 0;
     color: #6b6b6b;
     font-family: ft;
+    background-color: #fff;
     margin-left: 4%;
     font-size: 20px;
-    background-color: rgb(255, 255, 255);
 }
 .info{
-    margin-top: 200px;
+    margin-top: 180px;
     width: 30%;
     position: relative;
     border-left: 1px solid #000000;
@@ -320,8 +320,25 @@ a.menuitemP{
     margin-left: 2px;
 
 }
-.opts{
-    text-decoration: underline #f5b401 3px;;
+.srbtnf{
+    border-radius: 5px;
+    margin-top: 2px;
+    margin-left: 2px;
+    background-color: #fff;
+    border-color: #000;
 }
+.opts{
+    text-decoration: underline #f5b401 3px;
+    margin-left: 40%;
+    font-family: ft;
+    font-size: 18px;
+  
+}
+.opt{
+    font-family: ft;
+    font-size: 18px;
+
+}
+
 
 
