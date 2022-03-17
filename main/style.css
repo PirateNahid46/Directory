@@ -304,7 +304,7 @@ a.menuitemP{
     text-decoration: underline #f5b401 3px;
 }
 .search{
-    margin-left: 40%;
+    margin-left: 30%;
     width: 15%;
     background-color: #000000;
     border: 1px solid #fff;
@@ -313,6 +313,12 @@ a.menuitemP{
     margin-top: 2px;
     color:#fff;
     font-family: ft;
+}
+.srbtn{
+    border-radius: 5px;
+    margin-top: 2px;
+    margin-left: 2px;
+
 }
 
 
