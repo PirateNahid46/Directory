@@ -93,7 +93,7 @@ img{
     width: 15%;
     overflow: auto;
     background-color: rgb(226, 226, 226);
-    height: 100%;
+    height: 91%;
     overflow-y: scroll;
     font-family: ft;
     overflow-x: hidden;
@@ -319,6 +319,9 @@ a.menuitemP{
     margin-top: 2px;
     margin-left: 2px;
 
+}
+.opts{
+    text-decoration: underline #f5b401 3px;;
 }
 
 
