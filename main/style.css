@@ -231,6 +231,7 @@ img{
     font-family: ft;
     font-size: 20px;
     height: 40%;
+    overflow-y: scroll;
     background-color: rgb(255, 255, 255);
 }
 a.menuitem{
@@ -338,6 +339,9 @@ a.menuitemP{
     font-family: ft;
     font-size: 18px;
 
+}
+.misc{
+    display: none;
 }
 
 
