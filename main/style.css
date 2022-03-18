@@ -24,7 +24,6 @@ font{
 
 
 
-
 body{
     background-color: #d39c05;
     overflow: hidden;
@@ -187,7 +186,7 @@ img{
     background-color: #ffffff;
 }
 .btitle{
-    font-size: 40px;
+    font-size: 40px;right:100px;
     color: #f5d888;
     justify-self: center;
     margin-top: 8px;
@@ -274,9 +273,13 @@ a.menuitem{
     position: absolute;
     top: -5px;
     right: 2%;
-    border: solid 15px #03da03;
+    border: solid 15px #02d151;
     border-bottom: solid 15px transparent;
     transition: all 0.2s;
+   
+		
+	
+
 }
 
 .intake{
