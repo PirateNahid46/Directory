@@ -26,6 +26,10 @@ document.getElementById("authform").addEventListener("submit", getname);
     const misc = document.getElementById("misc");
     const email = document.getElementById("email");
     const intake = document.getElementById("intake");
+    const flName = document.getElementById("flName");
+    const bdate = document.getElementById("bdate");
+    const bgroup = document.getElementById("bgroup");
+    
     const username = name.value;
     const userintake = intake.value;
     const usercn = cn.value;
@@ -37,6 +41,9 @@ document.getElementById("authform").addEventListener("submit", getname);
     const userdistrict = district.value;
     const usermisc = misc.value;
     const useremail = email.value;
+    const userflName = flName.value;
+    const userbdate = bdate.value;
+    const userbgroup = bgroup.value;
   name.value = "";
   cn.value = "";
   contact.value="";
@@ -45,6 +52,9 @@ document.getElementById("authform").addEventListener("submit", getname);
   district.value="";
   misc.value="";
   email.value="";  
+  flName.value = "";
+  bdate.value = "";
+  bgroup.value = "";
 
   if (usercn != ""){
     db.ref("info/" + usercn).set({
@@ -58,7 +68,10 @@ document.getElementById("authform").addEventListener("submit", getname);
       home: userhome,
       district: userdistrict,
       email: useremail,
-      misc : usermisc,
+      misc: usermisc,
+      flName: userflName,
+      bdate: userbdate,
+      bgroup: userbgroup,
     });
     alert("Information added");
 
