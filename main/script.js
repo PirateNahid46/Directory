@@ -11,21 +11,27 @@ const firebaseConfig = {
   const db = firebase.database();
   var storage = firebase.storage();
   var storageRef = storage.ref();
-  
- const fetchChat = db.ref("info/");
- fetchChat.on("child_added", function (snapshot) {
-   const messages = snapshot.val();
-     const msg = "<div onclick=\"load("+messages.cn+")\" class=\"cn"+messages.house+"\"> <img id=\""+messages.cn+"\" height=\"50\" width=\"50\"/> <font> "+ messages.name +"'"+messages.cn+" <font/></div>";
-     document.getElementById("list").innerHTML += msg;
+  main();
 
-     storageRef.child(messages.cn+ ".jpg").getDownloadURL().then(function(url) {
-      var img = document.getElementById(messages.cn);
-      img.src = url;
-      }).catch(function(error) {
-        var img = document.getElementById(messages.cn);
-        img.src = "./src/profile.png";
-      });
- });
+  function main(){
+    const fetchChat = db.ref("info/");
+    fetchChat.on("child_added", function (snapshot) {
+      const messages = snapshot.val();
+        const msg = "<div onclick=\"load("+messages.cn+")\" class=\"cn"+messages.house+"\"> <img id=\""+messages.cn+"\" height=\"50\" width=\"50\"/> <font> "+ messages.name +"'"+messages.cn+" <font/></div>";
+        document.getElementById("list").innerHTML += msg;
+   
+        storageRef.child(messages.cn+ ".jpg").getDownloadURL().then(function(url) {
+         var img = document.getElementById(messages.cn);
+         img.src = url;
+         }).catch(function(error) {
+           var img = document.getElementById(messages.cn);
+           img.src = "./src/profile.png";
+         });
+    });
+
+  }
+  
+
 
  function load(cn){
   const fetchChat = db.ref("info/" +cn);
@@ -103,4 +109,54 @@ const firebaseConfig = {
   document.getElementById("email").style.display = "block";
   document.getElementById("mobile").style.display = "block";
 
+ }
+
+ function search(){
+   var name = document.getElementById("search").value;
+   if(name != ""){
+    if(isNaN(name)){
+      const refD = db.ref("info/");
+      refD.orderByChild('name').equalTo(name).on("child_added", function(snapshot) {
+          var title = document.getElementById("tcadet");
+          var list = document.getElementById("list");
+            while (list.hasChildNodes()) {
+               list.removeChild(list.firstChild);
+            }
+            
+          const messages = snapshot.val();
+          const msg = "<div onclick=\"load("+messages.cn+")\" class=\"cn"+messages.house+"\"> <img id=\""+messages.cn+"\" height=\"50\" width=\"50\"/> <font> "+ messages.name +"'"+messages.cn+" <font/></div>";
+          document.getElementById("list").innerHTML += msg;
+     
+          storageRef.child(messages.cn+ ".jpg").getDownloadURL().then(function(url) {
+           var img = document.getElementById(messages.cn);
+           img.src = url;
+           }).catch(function(error) {
+             var img = document.getElementById(messages.cn);
+             img.src = "./src/profile.png";
+           });
+        
+          
+        
+    });
+    refD.orderByChild('name').equalTo(name).on("value", function(snapshot) {
+      if(snapshot.val()== null){
+        alert("No Result");
+      }
+  
+    });
+  
+      
+     }
+     else{
+       load(name);
+     }
+
+    }else{
+      var list = document.getElementById("list");
+            while (list.hasChildNodes()) {
+               list.removeChild(list.firstChild);
+            }
+      main();
+    }
+  
  }
