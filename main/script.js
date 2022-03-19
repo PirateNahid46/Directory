@@ -115,14 +115,15 @@ const firebaseConfig = {
    if(name != ""){
     if(isNaN(name)){
       const refD = db.ref("info/");
-      refD.orderByChild('name').equalTo(name).on("child_added", function(snapshot) {
+      refD.orderByChild('name').equalTo(name).on("value", function(snapshot) {
           var title = document.getElementById("tcadet");
           var list = document.getElementById("list");
             while (list.hasChildNodes()) {
                list.removeChild(list.firstChild);
             }
-            
-          const messages = snapshot.val();
+
+            snapshot.forEach(function(data){
+              const messages = data.val();
           const msg = "<div onclick=\"load("+messages.cn+")\" class=\"cn"+messages.house+"\"> <img id=\""+messages.cn+"\" height=\"50\" width=\"50\"/> <font> "+ messages.name +"'"+messages.cn+" <font/></div>";
           document.getElementById("list").innerHTML += msg;
      
@@ -133,6 +134,10 @@ const firebaseConfig = {
              var img = document.getElementById(messages.cn);
              img.src = "./src/profile.png";
            });
+
+            });
+            
+          
         
           
         
