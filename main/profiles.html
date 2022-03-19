@@ -21,7 +21,29 @@
             
             <input type="text" id="search" class="search" placeholder="Name/Cadet no.">
             <img height="20px" class="srbtn" src="./src/search2.png" onclick="search()">
-            <img height="20px" class="srbtnf" src="./src/filter.png" id="flbtn">
+           
+            <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+            <label for="openSidebarMenu" class="sidebarIconToggle">
+                <img height="20px" class="srbtnf" src="./src/filter.png" id="flbtn">
+            </label>
+            <div id="sidebarMenu">
+                
+                <label>Batch: </label>
+                <input type="number" id="flbatch">
+                <br>
+                <label>House: </label>
+                <select id="house" type="text">
+                    <option value="All">All</option>
+                    <option value="Tariq">Tariq</option>
+                    <option value="Qasim">Qasim</option>
+                    <option value="Khalid">Khalid</option>
+                </select>
+                <br>
+                <button onclick="filter()">Filter</button>
+            
+
+                  
+              </div>
             
             
 

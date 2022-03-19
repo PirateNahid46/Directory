@@ -49,7 +49,6 @@ const firebaseConfig = {
     document.getElementById("address").innerHTML = "Address: "+ snapshot.child("home").val()+", "+ snapshot.child("district").val();
     document.getElementById("flName").innerHTML = snapshot.child("flName").val();
     document.getElementById("misc").innerHTML = "<br>Birthday:  "+ snapshot.child("bdate").val() + "<br><br> Blood Group: "+ snapshot.child("bgroup").val() + "<br><br> Misc. "+ snapshot.child("misc").val();
-    document.getElementById("misc").style.display = "none";
     const ele = document.getElementById("infoHC");
     const eleQ = document.getElementById("infoHCQ");
     const eleK = document.getElementById("infoHCK");
@@ -141,7 +140,7 @@ const firebaseConfig = {
     refD.orderByChild('name').equalTo(name).on("value", function(snapshot) {
       if(snapshot.val()== null){
         alert("No Result");
-      }
+      }else{}
   
     });
   
@@ -159,4 +158,52 @@ const firebaseConfig = {
       main();
     }
   
+ }
+ function filter(){
+   var batch = document.getElementById("flbatch").value;
+   var housefl = document.getElementById("house").value;
+   if(batch!=""){
+     if(housefl == "All"){
+      const refD = db.ref("info/");
+      refD.orderByChild('batch').equalTo(batch).on("value", function(snapshot) {
+        var title = document.getElementById("tcadet");
+        var list = document.getElementById("list");
+          while (list.hasChildNodes()) {
+             list.removeChild(list.firstChild);
+          }
+
+          snapshot.forEach(function(data){
+            const messages = data.val();
+            const msg = "<div onclick=\"load("+messages.cn+")\" class=\"cn"+messages.house+"\"> <img id=\""+messages.cn+"\" height=\"50\" width=\"50\"/> <font> "+ messages.name +"'"+messages.cn+" <font/></div>";
+            document.getElementById("list").innerHTML += msg;
+      
+            storageRef.child(messages.cn+ ".jpg").getDownloadURL().then(function(url) {
+            var img = document.getElementById(messages.cn);
+            img.src = url;
+            }).catch(function(error) {
+              var img = document.getElementById(messages.cn);
+              img.src = "./src/profile.png";
+            });
+            
+
+          });
+
+          
+          
+        
+  
+      
+        
+      
+  });
+  refD.orderByChild('batch').equalTo(batch).on("value", function(snapshot) {
+    if(snapshot.val()== null){
+      alert("No Result");
+    }
+
+  });
+      
+
+     }
+   }
  }
