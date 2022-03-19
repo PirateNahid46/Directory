@@ -22,6 +22,8 @@ const firebaseConfig = {
       var img = document.getElementById(messages.cn);
       img.src = url;
       }).catch(function(error) {
+        var img = document.getElementById(messages.cn);
+        img.src = "./src/profile.png";
       });
  });
 
@@ -39,7 +41,8 @@ const firebaseConfig = {
     document.getElementById("work").innerHTML = snapshot.child("work").val();
     document.getElementById("intake").innerHTML = "Intake " + snapshot.child("intake").val();
     document.getElementById("address").innerHTML = "Address: "+ snapshot.child("home").val()+", "+ snapshot.child("district").val();
-    document.getElementById("misc").innerHTML = "Misc: "+ snapshot.child("misc").val();
+    document.getElementById("flName").innerHTML = snapshot.child("flName").val();
+    document.getElementById("misc").innerHTML = "<br>Birthday:  "+ snapshot.child("bdate").val() + "<br><br> Blood Group: "+ snapshot.child("bgroup").val() + "<br><br> Misc. "+ snapshot.child("misc").val();
     document.getElementById("misc").style.display = "none";
     const ele = document.getElementById("infoHC");
     const eleQ = document.getElementById("infoHCQ");
