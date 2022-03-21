@@ -353,12 +353,12 @@ a.menuitemP{
     right: 0;
     width: 250px;
     margin-top: 25px;
-    transform: translateY(-2500px);
+    transform: translateX(250px);
     transition: transform 250ms ease-in-out;
     background: #000;
 }
 input[type="checkbox"]:checked ~ #sidebarMenu {
-    transform: translateY(0);
+    transform: translateX(0);
 }
 
 input[type=checkbox] {
