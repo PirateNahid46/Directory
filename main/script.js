@@ -241,5 +241,38 @@ const firebaseConfig = {
   });
 
      }
+   }else{
+    const refD = db.ref("info/");
+    refD.orderByChild('house').equalTo(housefl).on("value", function(snapshot) {
+      var title = document.getElementById("tcadet");
+      var list = document.getElementById("list");
+        while (list.hasChildNodes()) {
+           list.removeChild(list.firstChild);
+        }
+
+        snapshot.forEach(function(data){
+          const messages = data.val();
+          const msg = "<div onclick=\"load("+messages.cn+")\" class=\"cn"+messages.house+"\"> <img id=\""+messages.cn+"\" height=\"50\" width=\"50\"/> <font> "+ messages.name +"'"+messages.cn+" <font/></div>";
+          document.getElementById("list").innerHTML += msg;
+    
+          storageRef.child(messages.cn+ ".jpg").getDownloadURL().then(function(url) {
+          var img = document.getElementById(messages.cn);
+          img.src = url;
+          }).catch(function(error) {
+            var img = document.getElementById(messages.cn);
+            img.src = "./src/profile.png";
+          });
+          
+
+        });
+    
+});
+refD.orderByChild('house').equalTo(housefl).on("value", function(snapshot) {
+  if(snapshot.val()== null){
+    alert("No Result");
+  }
+
+});
+
    }
  }
