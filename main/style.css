@@ -45,6 +45,8 @@ body{
 .cnTariq:hover{
     color: #ff0000;
     background: #000000;
+    height: 55px;
+    font-size: 20px;
     
 }
 .cnQasim{
@@ -61,6 +63,8 @@ body{
 .cnQasim:hover{
     color: #0077ff;
     background: #000000;
+    height: 55px;
+    font-size: 20px;
     
 }
 .cnKhalid{
@@ -77,6 +81,8 @@ body{
 .cnKhalid:hover{
     color: #03da03;
     background: #000000;
+    height: 55px;
+    font-size: 20px;
     
 }
 img{

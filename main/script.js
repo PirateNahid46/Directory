@@ -40,7 +40,7 @@ const firebaseConfig = {
     
     document.getElementById("name").innerHTML = "Cadet "+ name;
     document.getElementById("cadetno").innerHTML = "Cadet no: "+ cn;
-    document.getElementById("house").innerHTML = "House: "+ snapshot.child("house").val();
+    document.getElementById("houseD").innerHTML = "House: "+ snapshot.child("house").val();
     document.getElementById("batch").innerHTML = "Batch: "+ snapshot.child("batch").val();
     document.getElementById("mobile").innerHTML = "Mobile: "+ snapshot.child("contact").val();
     document.getElementById("email").innerHTML = "Email: "+ snapshot.child("email").val() ;
