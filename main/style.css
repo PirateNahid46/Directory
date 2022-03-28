@@ -221,6 +221,7 @@ img{
     padding-right: 0;
     color: #3f3f3f;
     font-family: ft;
+    height: 40%;
     background-color: #fff;
     margin-left: 4%;
     font-size: 20px;
@@ -314,7 +315,7 @@ a.menuitemP{
     text-decoration: underline #f5b401 3px;
 }
 .search{
-    margin-left: 30%;
+    margin-left: 25%;
     width: 15%;
     background-color: #000000;
     border: 1px solid #fff;
