@@ -389,10 +389,30 @@ button{
 option{
     font-family: ft;
 }
+.mobile{
+    display: none;
+}
+select{
+    font-family: ft;
+}
 @media only screen and (max-width: 768px) {
   
-  body {
-    background: #fff;
+  .topBar{
+      display: none;
+  }
+  .menu{
+      display: none;
+
+  }
+  .mainCon{
+      display: none;
+  }
+  .list{
+      display: none;
+  }
+  .mobile{
+      display: block;
+      font-family: ft;
   }
 }
 
