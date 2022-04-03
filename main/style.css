@@ -431,22 +431,25 @@ display: flex;
       display: block;
       font-family: ft;
       position:fixed;
-      bottom: 0;
+      bottom: 5px;
+      left: 15%;
       color: #00ff62;
       font-size: 25px;
   }
   .mainIndex{
     overflow-y: scroll;
-    margin-left: 5%;
+    margin-left: 1%;
     margin-right: 5%;
+    width:83%;
+    
 
   }
   .btitle{
-    font-size: 25px;
+    font-size: 17px;
     right:0px;
     color: #f5d888;
-    margin-left: 5%;
-    margin-top: 3%;
+    margin-left: 1%;
+    margin-top: 5%;
     font-family: Georgia, 'Times New Roman', Times, serif;
 
 }
