@@ -395,10 +395,27 @@ option{
 select{
     font-family: ft;
 }
+.mainIndex{
+font-family: ft;
+color: rgb(0, 0, 0);
+position:fixed;
+padding: 20px;
+width: 80%;
+margin-top: 10%;
+margin-left: 10%;
+height: 80%;
+font-size: 25px;
+margin-right: 10%;
+background-color: rgb(255, 208, 0);
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+display: flex;
+}
+
 @media only screen and (max-width: 768px) {
   
   .topBar{
-      display: none;
+      display: block;
+      display: flex;
   }
   .menu{
       display: none;
@@ -413,7 +430,26 @@ select{
   .mobile{
       display: block;
       font-family: ft;
+      position:fixed;
+      bottom: 0;
+      color: #00ff62;
+      font-size: 25px;
   }
+  .mainIndex{
+    overflow-y: scroll;
+    margin-left: 5%;
+    margin-right: 5%;
+
+  }
+  .btitle{
+    font-size: 25px;
+    right:0px;
+    color: #f5d888;
+    margin-left: 5%;
+    margin-top: 3%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
 }
 
 
