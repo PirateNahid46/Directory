@@ -44,8 +44,7 @@ body{
 }
 .cnTariq:hover{
     color: #ff0000;
-    background: #000000;
-    height: 55px;
+    background: #cfcfcf;
     font-size: 20px;
     
 }
@@ -62,8 +61,7 @@ body{
 }
 .cnQasim:hover{
     color: #0077ff;
-    background: #000000;
-    height: 55px;
+    background: #cfcfcf;
     font-size: 20px;
     
 }
@@ -73,15 +71,14 @@ body{
     width: 90%;
     position: relative;
     display: flex;
-    margin: 0px;margin: 1px;
+    margin: 0px;
     border-bottom-style: solid;
     padding: 10px;
     
 }
 .cnKhalid:hover{
     color: #03da03;
-    background: #000000;
-    height: 55px;
+    background: #cfcfcf;
     font-size: 20px;
     
 }
@@ -97,7 +94,7 @@ img{
     right: 0;
     width: 15%;
     overflow: auto;
-    background-color: rgb(226, 226, 226);
+    background-color: rgb(255, 255, 255);
     height: 91%;
     overflow-y: scroll;
     font-family: ft;
@@ -142,7 +139,7 @@ img{
     border-radius: 0; 
     margin-top: 80px;
     margin-left: 75px;
-    background: #cacaca;
+    background: #ffffff;
 }
 
 
@@ -479,9 +476,9 @@ display: flex;
   background: #ffffff33;
 }
 .mobileC{
-  font-size: 12px;
+  font-size: 11px;
   font-family: serif;
-  width: 47%;
+  width: 46%;
   float: right;
   margin-right: 3%;
   margin-top: 4px;
@@ -490,10 +487,10 @@ display: flex;
 }
 .mobileI{
   border-radius: 0px;
-  margin: 4px;
+  margin: 1%;
 }
 .mobCon{
-  background: #ffffff;
+  background: #fff3d1;
   padding-top: 10px;
 }
 .mobWel{
