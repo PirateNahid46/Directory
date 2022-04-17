@@ -201,10 +201,9 @@ img{
 }
 .menu{
     position:fixed;
-    width: 120%;
+    width: 103%;
     margin-top: 53px;
-    margin-left: -12px;
-    margin-right: -100px;
+    margin-left: -1%;
     height: 25px;
     background-color: rgb(0, 0, 0);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
