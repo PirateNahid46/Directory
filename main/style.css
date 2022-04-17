@@ -189,7 +189,8 @@ img{
     background-color: #ffffff;
 }
 .btitle{
-    font-size: 40px;right:100px;
+    font-size: 40px;
+    right:10%;
     color: #f5d888;
     justify-self: center;
     margin-top: 8px;
@@ -397,15 +398,36 @@ font-family: ft;
 color: rgb(0, 0, 0);
 position:fixed;
 padding: 20px;
-width: 80%;
-margin-top: 10%;
-margin-left: 10%;
+width: 85%;
+margin-top: 7%;
+margin-left: 5%;
 height: 80%;
-font-size: 25px;
-margin-right: 10%;
-background-color: rgb(255, 208, 0);
+margin-right: 5%;
+background: #f5b401;
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-display: flex;
+overflow-y:scroll;
+}
+
+.Welcometitle{
+font-size: 30px;
+text-align: center;
+font-weight: bold;
+}
+.wlmti{
+text-align: center;
+}
+
+.imageIn{
+    border-radius: 0px;
+    width: 50%;
+    margin-top: 5%;
+}
+.conIn{
+    width: 100%;
+}
+.introduction{
+    text-align: center;
+    width: 100%;
 }
 
 @media only screen and (max-width: 768px) {
@@ -449,7 +471,7 @@ display: flex;
     bottom: 5px;
     left: 15%;
     color: #00ff62;
-    font-size: 25px;
+    font-size: 20px;
     margin-left: 20%;
     text-align: center;
   }
@@ -478,7 +500,8 @@ display: flex;
 .mobileC{
   font-size: 11px;
   font-family: serif;
-  width: 46%;
+  width: 45%;
+  height: 100%;
   float: right;
   margin-right: 3%;
   margin-top: 4px;
@@ -492,6 +515,7 @@ display: flex;
 .mobCon{
   background: #fff3d1;
   padding-top: 10px;
+  display: flex;
 }
 .mobWel{
   font-size: 15px;

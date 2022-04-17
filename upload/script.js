@@ -31,7 +31,6 @@ document.getElementById("send").addEventListener("click", function() {
       //upload file
       var upload = storage.put(files[i]);
 
-      //update progress bar
       upload.on(
         "state_changed",
         function progress(snapshot) {
