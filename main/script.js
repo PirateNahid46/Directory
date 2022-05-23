@@ -142,9 +142,11 @@ const firebaseConfig = {
         
     });
     refD.orderByChild('name').equalTo(name).on("value", function(snapshot) {
-      if(snapshot.val()== null){
+      if(snapshot.val() == null){
         alert("No Result");
-      }else{}
+      }else{
+        
+      }
   
     });
   

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Document</title>
+</head>
+<body>
+    <form autocomplete="off" id="authform">
+        <label>Cadet Name </label>
+        <br>
+        <input id="namebox" class="textbox" type="text">
+        <br><br>
+        <label>Full Name </label>
+        <br>
+        <input id="flName" type="text">
+        <br><br>
+        <label> Cadet no: </label>
+        <br>
+        <input id="cn" class="textbox" type="number" />
+        <br><br>
+        <label>Batch</label>
+        <br>
+        <input id="batch" type="number">
+        <br><br>
+        <label>House</label>
+        <br>
+        <select id="house" type="text">
+            <option value="Tariq">Tariq</option>
+            <option value="Qasim">Qasim</option>
+            <option value="Khalid">Khalid</option>
+        </select>
+        <br><br>
+        <label>Intake</label>
+        <br>
+        <input id="intake" type="number">
+        <br><br>
+        <label>Birthday</label>
+        <br>
+        <input id="bdate" type="date">
+        <br><br>
+        <label>Blood Group</label>
+        <br>
+        <input id="bgroup" type="text">
+        <br><br>
+        <label>Mobile</label>
+        <br>
+        <input type="text" id="contact">
+        <br><br>
+        <label>Work</label>
+        <br>
+        <input id="work" type="text">
+        <br><br>
+        <label>Home</label>
+        <br>
+        <input id="home" type="text">
+        <br><br>
+        <label>District</label>
+        <br>
+        <input id="district" type="text">
+        <br><br>
+        <label>Email</label>
+        <br>
+        <input id="email" type="text">
+        <br><br>
+        <label>Misc.</label>
+        <br>
+        <input id="misc" type="text">
+        <br><br>
+
+
+
+        <button id="subName-btn" class="sub" type="submit">Submit</button>
+      </form>
+    
+</body>
+<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
+    <script src="script.js"></script>   
+</html>
