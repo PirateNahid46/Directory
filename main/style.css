@@ -407,6 +407,22 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 overflow-y:scroll;
 }
 
+.mainAbout{
+font-family: ft;
+color: rgb(0, 0, 0);
+position:fixed;
+font-size: large;
+padding: 20px;
+width: 85%;
+margin-top: 7%;
+margin-left: 5%;
+height: 80%;
+margin-right: 5%;
+background: #f8f8f8;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+overflow-y:scroll;
+}
+
 .Welcometitle{
 font-size: 30px;
 text-align: center;
