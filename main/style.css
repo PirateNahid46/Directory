@@ -422,6 +422,83 @@ background: #f8f8f8;
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 overflow-y:scroll;
 }
+.achieveMain{
+font-family: ft;
+color: rgb(0, 0, 0);
+position:fixed;
+font-size: large;
+padding: 20px;
+width: 85%;
+margin-top: 7%;
+margin-left: 5%;
+height: 80%;
+margin-right: 5%;
+background: #f8f8f8;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+overflow-y:scroll;
+display: flexbox;
+grid-template-columns: repeat(3, 1fr);
+gap: 0 2rem;
+
+}
+.blog-box {
+    width: 100%;
+    box-shadow: 0 0 3px rgba(60, 72, 88, .8);
+    margin: 10px;
+}
+.image-container {
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    background-color: #000;
+  }
+
+  .image-container img {
+    object-fit: cover;
+    height: 25rem;
+    justify-self: center;
+  }
+  .blog-box .content {
+    padding: 2rem 1rem;
+  }
+  
+  .blog-box .content h4 {
+    font-weight: 500;
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+  }
+  
+  .blog-box .content p {
+    color: #222;
+    margin-bottom: 1rem;
+  }
+
+.listMentors{
+font-family: ft;
+color: rgb(0, 0, 0);
+position:fixed;
+font-size: large;
+padding: 20px;
+width: 85%;
+margin-top: 7%;
+display: flex;
+margin-left: 5%;
+height: 80%;
+margin-right: 5%;
+background: #f8f8f8;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+overflow-y:scroll;
+
+}
+.mentors{
+    margin-left: 10px;
+    margin-right: 15px;
+}
+.menimg{
+    border-radius: 0px;
+    background-color:#555 ;
+}
 
 .Welcometitle{
 font-size: 30px;
