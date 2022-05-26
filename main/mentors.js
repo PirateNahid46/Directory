@@ -18,7 +18,7 @@ function main(){
     const fetchChat = db.ref("mentors/");
     fetchChat.on("child_added", function (snapshot) {
       const messages = snapshot.val();
-        const msg = "<img id=\""+messages.id+"\" class=\"menimg\" height=\"120px\" width=\"120px\" src=\"./src/profile.png\"><div class=\"mentors\"> Name: "+ messages.name +"<br>Email: "+messages.email+"<br>Department: "+messages.depart+"<br>Designation: "+messages.desig+"<br>Mobile: "+messages.mobile+" </div>";
+        const msg = "<div><img id=\""+messages.id+"\" class=\"menimg\" height=\"120px\" width=\"120px\" src=\"./src/profile.png\"><div class=\"mentors\"> Name: "+ messages.name +"<br>Email: "+messages.email+"<br>Department: "+messages.depart+"<br>Designation: "+messages.desig+"<br>Mobile: "+messages.mobile+" </div></div>";
         document.getElementById("list").innerHTML += msg;
    
         storageRef.child(messages.id+ ".jpg").getDownloadURL().then(function(url) {
