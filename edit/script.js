@@ -1,4 +1,8 @@
-var cn = location.search.substring(1);
+//var cn = location.search.substring(1);
+let cn = prompt("Enter Cadet No");
+
+
+
 const firebaseConfig = {
     apiKey: "AIzaSyCEAh8NxC793m1yyo88KpvxtO5CCaoSaRA",
     authDomain: "directory-74c53.firebaseapp.com",
@@ -24,13 +28,15 @@ const firebaseConfig = {
     const flName = document.getElementById("flName");
     const bdate = document.getElementById("bdate");
     const bgroup = document.getElementById("bgroup");
-
-
-
-  const fetchChat = db.ref("info/" +cn);
+    
+    
+    getData(cn);
+function getData(no){
+  const fetchChat = db.ref("info/" +no);
   fetchChat.once("value").then( function (snapshot) {
   const Gname = snapshot.child("name").val();
   const name = document.getElementById("namebox");
+  document.getElementById("cn").innerHTML = no;
 
   name.value = Gname;
   batch.value = snapshot.child("batch").val();
@@ -45,6 +51,7 @@ const firebaseConfig = {
   bdate.value = snapshot.child("bdate").val();
   bgroup.value = snapshot.child("bgroup").val();
   });
+}
   
 
 
