@@ -243,4 +243,7 @@ button{
     form{
         width: 100%;
     }
+    h2{
+        visibility: hidden;
+    }
 }
