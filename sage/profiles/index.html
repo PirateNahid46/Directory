@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rcc Directory</title>
+</head>
+<body>
+    <div class="topBar">
+        <img class="logo" height="50px" src="logo.png">
+            <b class="btitle">Rajshahi Cadet College Directory</b> 
+    </div>
+        <div class="menu">
+            <a class="menuitem" href="./index.html">Home</a>
+            <a class="menuitemP" href="./profiles.html">Profiles</a>
+            <a class="menuitem" href="./faculty.html">Mentors</a>
+            <a class="menuitem" href="./achievement.html">Achievements</a>
+            <a class="menuitem" href="./about.html">About</a>
+            
+            <input type="text" id="search" class="search" placeholder="Name/Cadet no.">
+            <img height="20px" class="srbtn" src="./src/search2.png" onclick="search()">
+           
+            <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+            <label for="openSidebarMenu" class="sidebarIconToggle">
+                <img height="20px" class="srbtnf" src="./src/filter.png" id="flbtn">
+            </label>
+            <div id="sidebarMenu">
+                
+                <label>Batch: </label>
+                <input type="number" id="flbatch">
+                <br>
+                <label>House: </label>
+                <select id="house" type="text">
+                    <option value="All">All</option>
+                    <option value="Tariq">Tariq</option>
+                    <option value="Qasim">Qasim</option>
+                    <option value="Khalid">Khalid</option>
+                </select>
+                <br>
+                <button onclick="filter()">Filter</button>
+            
+
+                  
+              </div>
+            
+            
+
+        </div>
+        
+
+    
+    
+        
+        
+            <div class="mainCon">
+                <div id="details" class="details">
+                    <div class="profileCon">
+                        <img class="profile" src='./src/profile.png' height="80%" width="80%" id="profile"/>
+                        <div id="intake" class="intake">Intake 2016</div>
+
+                    </div>
+                    <font id="cont" onclick="cont()" class="opts">Contacts</font>
+                    <font id="more" onclick="more()" class="opt">More</font>
+                    <div class="infoHC" id="infoHC"></div>
+                    <div class="infoHCQ" id="infoHCQ"></div>
+                    <div class="infoHCK" id="infoHCK"></div>
+                    
+
+                    
+                    
+                    
+                    <div class="info">
+                        <div id="misc" class="misc">Misc </div>
+                        <br>
+                        <div id="address">Address </div>
+                        <br>
+                        <div id="mobile">Mobile </div>
+                        <br>
+                        <div id="email">Email</div>
+                        <br>
+                        
+                        
+                    
+                    
+
+                    </div>
+                    
+                    <div class="info2">
+                        <p id="work" class="work">Cadet</p>
+                        <p id="name" class="name">Cadet Name</p>
+                        <p id="cadetno">Cadet no. </p>
+                        <p id="houseD">House</p>
+                        <p id="batch">Batch</p>
+
+                    
+                    
+
+                    </div>
+
+                    
+                    
+            
+                
+            
+                </div>
+        
+            </div>
+
+        
+
+    
+
+    
+
+    
+    
+    
+    <div id="list" class="list">
+        <b class="title" id="tcadet">Cadets</b>
+        <br>
+        <br>
+        
+
+    </div>
+
+
+</body>
+<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.2-0/firebase-storage.js"></script>
+    <script src="script.js"></script>   
+</html>
