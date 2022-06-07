@@ -482,7 +482,9 @@ font-size: large;
 padding: 20px;
 width: 85%;
 margin-top: 7%;
-display: flex;
+display: inline;
+justify-content: center;
+align-items: center;
 margin-left: 5%;
 height: 80%;
 margin-right: 5%;
@@ -492,12 +494,15 @@ overflow-y:scroll;
 
 }
 .mentors{
+    position: relative;
     margin-left: 10px;
+    justify-self: center;
     margin-right: 15px;
 }
 .mentorCon{
     display: flex;
-    width: 33%;
+    width: 50%;
+    margin: 20px;
 }
 .menimg{
     border-radius: 0px;
