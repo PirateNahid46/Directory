@@ -152,36 +152,6 @@ img{
     margin-top: -2px;
     font-family: mm;
 }
-
-.logo{
-
-    margin: 10px;
-    border-radius: 7px;
-    background-color: #ffffff;
-}
-.btitle{
-    font-size: 40px;
-    right:10%;
-    color: #f5d888;
-    justify-self: center;
-    margin-top: 8px;
-    margin-left: 20%;
-    text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-
-}
-.menu{
-    position:fixed;
-    width: 103%;
-    margin-top: 53px;
-    margin-left: -1%;
-    height: 25px;
-    background-color: rgb(0, 0, 0);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    z-index: 2;
-    display: flex;
-    border-top: 1px solid #5c5c5c;
-}
 .info2{
     width: 30%;
     position: relative;
@@ -277,6 +247,18 @@ a.menuitem{
     display: none;
 }
 
+.opts{
+    text-decoration: underline #f5b401 3px;
+    margin-left: 40%;
+    font-family: ft;
+    font-size: 18px;
+  
+}
+.opt{
+    font-family: ft;
+    font-size: 18px;
+
+}
 
 ::-webkit-scrollbar {
     width: 10px;
@@ -300,18 +282,64 @@ a.menuitem{
   
 
 @media only screen and (max-width: 768px) {
+    body{
+        overflow-y: scroll;
+    }
   
-  .topBar{
-      display: block;
-      display: flex;
-  }
-  .menu{
-      display: none;
-
-  }
+ 
   .mainCon{
-      display: none;
+      height: fit-content;
+      width: fit-content;
+      position: relative;
+      margin: 1px;
+      display:flex;
+      background-color: #fff;
+      overflow-y: scroll;
   }
+  .name{
+    color: black;
+    font-weight: bolder;
+    font-size: 20px;
+    margin-top: -2px;
+    font-family: mm;
+}
+.profileCon{
+    
+    position: relative;
+    float: left;
+    width: 30%;
+
+}
+.info2{
+    width: 100%;
+    padding-right: 0;
+    color: #3f3f3f;
+    font-family: ft;
+    background-color: #fff;
+    font-size: 20px;
+}
+.info{
+    width: 100%;
+    padding-right: 0;
+    color: #3f3f3f;
+    font-family: ft;
+    background-color: #fff;
+    font-size: 20px;
+}
+.opt{
+    font-family: ft;
+    font-size: 18px;
+
+}
+.details{
+    padding: 0;
+    
+
+}
+.profileCon{
+    position: relative;
+}
+
  
 
 }
