@@ -66,7 +66,7 @@ const firebaseConfig = {
       imgMain.src = url;
       }).catch(function(error) {
         var imgMain = document.getElementById("profile");
-        imgMain.src = "./src/profile.png";
+        imgMain.src = "../../main/src/profile.png";
       });
 
   });
