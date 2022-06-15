@@ -279,6 +279,11 @@ a.menuitem{
   ::-webkit-scrollbar-thumb:hover {
     background: #555; 
   }
+  .mobOptions{
+      display: none;
+    
+}
+
   
 
 @media only screen and (max-width: 768px) {
@@ -288,13 +293,13 @@ a.menuitem{
   
  
   .mainCon{
-      height: fit-content;
-      width: fit-content;
+      width: 95%;
       position: relative;
-      margin: 1px;
       display:flex;
-      background-color: #fff;
+      left: 0%;
+      background: linear-gradient(90deg, #fff 20%, #ffffff 20%);
       overflow-y: scroll;
+      flex-wrap: wrap;
   }
   .name{
     color: black;
@@ -306,7 +311,6 @@ a.menuitem{
 .profileCon{
     
     position: relative;
-    float: left;
     width: 30%;
 
 }
@@ -314,6 +318,7 @@ a.menuitem{
     width: 100%;
     padding-right: 0;
     color: #3f3f3f;
+    margin:0%;
     font-family: ft;
     background-color: #fff;
     font-size: 20px;
@@ -325,11 +330,15 @@ a.menuitem{
     font-family: ft;
     background-color: #fff;
     font-size: 20px;
+    margin-top: 0%;
 }
 .opt{
-    font-family: ft;
-    font-size: 18px;
+    display: none;
 
+}
+.opts{
+    display: none;
+  
 }
 .details{
     padding: 0;
@@ -338,6 +347,20 @@ a.menuitem{
 }
 .profileCon{
     position: relative;
+    justify-self: center;
+    width: 50%;
+}
+.intake{
+    width: 80%;
+}
+
+.mobOptions{
+    display: block;
+    font-family: ft;
+    font-size: 18px;
+    position: fixed;
+    z-index: 1;
+
 }
 
  

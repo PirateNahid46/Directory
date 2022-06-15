@@ -43,7 +43,7 @@ function getData(no){
   contact.value=snapshot.child("contact").val();
   work.value=snapshot.child("work").val();
   intake.value = snapshot.child("intake").val();
-  home.value=snapshot.child("work").val();
+  home.value=snapshot.child("home").val();
   district.value=snapshot.child("district").val();
   misc.value=snapshot.child("misc").val();
   email.value=snapshot.child("email").val();  
