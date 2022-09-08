@@ -1,10 +1,10 @@
 @font-face {
     font-family: mm;
-    src: url(Mermaid1001.ttf);
+    src: url(eagle.otf);
   }
   @font-face {
     font-family: ft;
-    src: url(foot.otf);
+    src: url(poppins.ttf);
   }
 font{
     text-decoration: none;
