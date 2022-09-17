@@ -196,7 +196,7 @@ img{
     margin-top: 8px;
     margin-left: 20%;
     text-align: center;
-    font-family: mm;
+    font-family:mm;
 
 }
 .menu{
@@ -603,7 +603,7 @@ text-align: center;
     color: #f5d888;
     margin-left: 1%;
     margin-top: 5%;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: mm;
 
 }
 .mobileTitle{
@@ -621,7 +621,7 @@ text-align: center;
 }
 .mobileC{
   font-size: 11px;
-  font-family: serif;
+  font-family: mm;
   width: 45%;
   height: 100%;
   float: right;
